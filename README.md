@@ -15,11 +15,11 @@ PHP: 8.1+
 
 -   Install [Composer](https://getcomposer.org/download) and [Npm](https://nodejs.org/en/download)
 -   Clone the repository: `git clone --branch frontend https://github.com/AryaWibawaZulfiansyah/Layanan_web.git`
--   Install dependencies: `composer install ; npm install ; npm run dev`
+-   Install dependencies: `composer update; composer install ; npm install ; npm run dev`
 -   Jalankan `cp .env.example .env` untuk mmbuat file .nv
 -   Edit pada bagian `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`. Sesuai kan dengan database pada xampp/laragon.
 -   Jalankan `php artisan key:generate`
--   Jalankan `php artisan migrate --seed` for migration database
+-   Jalankan `php artisan migrate --seed --seeder=AdminSeeder` for migration database
 
 ## License
 
